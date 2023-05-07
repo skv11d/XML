@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Flower">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Plant" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Soil" type="xs:string"/>
+                            <xs:element name="Origin" type="xs:string"/>
+                            <xs:element name="VisualParameters" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="StemColor" type="xs:string"/>
+                                        <xs:element name="LeafColor" type="xs:string"/>
+                                        <xs:element name="Size" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="GrowingTips" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Temperature" type="xs:int"/>
+                                        <xs:element name="Lighting" type="xs:string"/>
+                                        <xs:element name="Watering" type="xs:int"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Multiplying" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
