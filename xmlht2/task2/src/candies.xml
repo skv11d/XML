@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<candies>
+    <candy>
+        <name>Twix</name>
+        <flavor>Caramel</flavor>
+        <color>Brown</color>
+    </candy>
+    <candy>
+        <name>Skittles</name>
+        <flavor>Fruit</flavor>
+        <color>Assorted</color>
+    </candy>
+    <candy>
+        <name>Reese's Pieces</name>
+        <flavor>Peanut Butter</flavor>
+        <color>Orange</color>
+    </candy>
+</candies>
